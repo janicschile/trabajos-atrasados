@@ -1,0 +1,45 @@
+*{
+    background-color: #245076;
+}
+
+body *{
+    outline: 1px solid pink;
+}
+
+div.container {
+    width: 980px;
+    min-width: 800px;
+    background-color: #d4d2ae;
+    margin: 0px auto;
+    
+}
+
+div.container div.header div.logo {
+    text-align: left;
+    margin: 5px;
+    display: inline-block;
+    width: 350px;
+}
+
+div.container div.header div.logo img {
+    width: 320px;
+}
+
+div.container div.header div.logoright {
+    width: 400px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.container div.header div.textsize {
+    width: 400px;
+    color: white;
+    text-de
+}
+
+div.container div.header div.search {
+    display: inline-block;
+    width: 400px;
+    
+}

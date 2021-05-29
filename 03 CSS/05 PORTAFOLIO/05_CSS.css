@@ -1,0 +1,135 @@
+body *{
+    /* outline: 1px solid pink; */
+}
+
+div.container {
+    width: 980px;
+    min-width: 800px;
+    background-color: #000000;
+    background-image: linear-gradient(297deg, #000000 0%, #784BA0 33%, #2B86C5 66%, #ffffff 100%);
+    margin: 0px auto;
+}
+
+div.container div.header {
+    background-color: whitesmoke;
+}
+
+div.container div.header div.h1left {
+    display: inline-block;  
+    min-width: 280px;  
+    text-align: center;
+    font-family: cursive;
+    padding-right: 20px;           
+}
+
+div.container div.header div.h2right {
+    display: inline-block; 
+    min-width: 673px;  
+    text-align: right;  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+div.container div.about {
+    min-height: 300px;  
+    padding: 20px; 
+    margin: 2px;
+    vertical-align: top;  
+            
+}
+
+div.container div.about div.abimage {  
+    display: inline-block;       
+    vertical-align: top;
+    padding-right: 20px;    
+    min-height: 285px;
+    width: 44%;
+}
+div.container div.about div.abimage img {  
+    border: 8px solid silver;
+}
+
+div.container div.about div.abcontent {  
+    display: inline-block;  
+    min-height: 285px;
+    width: 53%;  
+    border: 20px;
+    background-color: wheat ;    
+}
+
+div.container div.about div.abcontent #abh2 {  
+    
+    padding: 20px;
+    border: 20px;
+    display: inline-block;      
+    vertical-align: top;
+    min-height: 30px;
+    width: 92%;  
+    margin: 0px;
+    color: white;
+    background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
+}
+
+div.container div.bottom div.message {
+    display: inline-block;
+    min-height: 570px;
+    width: 294px;
+    background-color: white;
+    vertical-align: top;
+    text-align: center;
+    margin-left: 20px;
+
+}
+
+div.container div.bottom div.message h2 {
+    text-indent: 1em;
+    padding: 10px;
+    text-align: left;
+    padding-left: 0px;  
+    color: white;
+    height: 30px;
+    margin-block-start: 0px;
+    background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
+
+}
+
+div.container div.bottom div.message h4 {
+    font-family: monospace;
+    text-align: justify;
+    padding: 10px;
+}
+
+div.container div.bottom div.message div.image1 {
+    height: 80px;
+    margin-block-start: 0px;
+    width: 400px;
+}
+
+div.container div.bottom div.message div.iconos {
+    text-align: left;
+    padding-left: 15px;
+
+}
+
+div.container div.bottom div.message .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+div.container div.bottom div.message .button:hover {
+    background-color: #3e8e41;
+}
+
+div.container div.footer {
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+}

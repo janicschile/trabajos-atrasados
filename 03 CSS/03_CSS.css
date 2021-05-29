@@ -1,0 +1,60 @@
+/*CSS reset settings here*/
+*{
+    margin: 10px;
+    padding: 5px;
+   }
+
+   a {
+    color:aquamarine;
+   }
+   .blue{
+       color: blue;
+       padding: 0;
+       margin: 0;
+   }
+   body{
+    background-color: darkblue;
+   }
+   #wrapper{
+    width: 970px;
+    margin: auto;
+   }
+   #header{
+    padding: 20px;
+    background-color: darkred;
+    color: whitesmoke;
+    font-size: 30pt;
+    font-weight: bold;
+    border-radius: 5px;
+   }
+   #navigation{
+    background-color: teal;
+    color:darkseagreen;
+    font-size: 11pt;
+    line-height: 0px;
+    padding: 3px;
+    padding-top: 25px;
+    padding-left: 10px;
+    border-radius: 5px;
+    min-height: 300px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    
+   }
+   #main_content{
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 400px;
+    width: 67%;
+    background-color: black;
+    display: inline-block;
+    font-size: x-small;
+   }
+   #advertisement{
+    padding: 20px;
+    border-radius: 5px;
+    background-color:cadetblue;
+    color:whitesmoke;
+   }
