@@ -232,28 +232,105 @@ console.log("Valor del array duplicado:" , duplicado(arrayOriginal))
 ////                               Ejemplo: invertir([3,1,6,4,2)) devuelve el mismo array pero con sus valores al revés, 
 ////                               es decir [2,4,6,1,3]. 
 ////                               Haz esto sin crear un array temporal vacío. (Pista: necesitarás intercambiar (swap) valores).
+function Invertido(invertir) {
+    invertir = invertir.reverse();
+    return invertir
+}
 
 invertir = [3,1,6,4,2]
+console.log(Invertido(invertir))
+////
+////
 
-for (let i = 0; i < invertir.length-1; i++) {
-    tempi = 0
-    temp[i] = invertir[i]
+
+
+
+// Ejercicio #11 - Perspectiva: Negativa : Dado un array crear y devuelve uno nuevo que contenga todos los valores del 
+//                              array original, pero negativos (no simplemente multiplicando por -1). 
+//                              Dado [1,-3,5], devuelve [-1,-3,-5].
+function perspectiva(arrayNegativo) {
+    for (let i = 0; i < arrayNegativo.length; i++) {
+        if ( arrayNegativo[i] < 0 ) {
+            console.log("Encontrado Negativo: ", arrayNegativo[i])
+        } else {
+            console.log("Encontrado Positivo: ", arrayNegativo[i])
+            arrayNegativo[i] = arrayNegativo[i] * -1
+        }
+    }
+    for (let x = 0; x < arrayNegativo.length; x++) {
+        console.log("Posicion en el Array #["+(x)+"]: ", arrayNegativo[x])   
+    }
+    return arrayNegativo
 }
-for (let i = 0; i < invertir.length-1; i++) {
-    console.log(temp[i])
+
+arrayNegativo = [1,-3,5]
+console.log("Datos del Array:", perspectiva(arrayNegativo))
+////
+////
+
+
+
+
+// Ejercicio #12 - Siempre hambriento : Crea una función que acepte un array e imprima (print) “yummy” 
+////                                    cada vez que alguno de los valores sea “comida”. 
+////                                    Si ningún valor es “comida”, entonces imprime “tengo hambre” una vez. 
+function hambriento(arrayComida) {
+    for (let i = 0; i < arrayComida.length; i++) {
+        if (arrayComida[i] == "comida") {
+            console.log("yummy")
+        } else {
+            if (arrayComida.includes("comida")) {
+            } else {
+                return "tengo hambre"
+            }
+        }
+    }
+    return ""
+}
+arrayComida = ["comida",1,2,"comida",4,5,"comida"]
+//arrayComida = [1,2,3,4,5,6,7,8,9]
+console.log(hambriento(arrayComida))
+////
+////
+
+
+// Ejercicio #13 - Cambiar hacia el centro :  Dado un array, cambia el primer y último valor, el tercero con el ante penútimo, 
+////                                          etc. 
+////                                          Ejemplo: cambiaHaciaElCentro([true, 42, “Ada”, 2, “pizza”]) 
+////                                          cambia el array a [“pizza¨, 42, “Ada”, 2, true]. 
+////                                          cambiaHaciaElCentro([1,2,3,4,5,6]) cambia el array a [6,2,4,3,5,1]. 
+////                                          No es necesario devolver (return) el array esta vez. 
+function haciaElCentro(cambiaHaciaElCentro) {
+    for (let i = 0; i < (parseInt(cambiaHaciaElCentro.length / 2)); i+=2) {
+        temp = cambiaHaciaElCentro[i]
+        cambiaHaciaElCentro[i] = cambiaHaciaElCentro[(cambiaHaciaElCentro.length-i)-1]
+        cambiaHaciaElCentro[(cambiaHaciaElCentro.length-i)-1] = temp 
+    }
+    return cambiaHaciaElCentro
 }
 
-var arr = [1,3,5,7];
-var temp = arr[0];
-arr[0] = arr[1];
-arr[1] = temp;
+//cambiaHaciaElCentro = ["pizza", 42, "Ada", 2, true]
+cambiaHaciaElCentro = [1,2,3,4,5,6]
+console.log("Los valores invertidos son:" , haciaElCentro(cambiaHaciaElCentro))
+////
+////
 
 
 
+// Ejercicio #14 - Escala el Array : Dado un array arr y un número num, multiplica todos los valores en el array arr 
+////                                 por el número num, y devuelve el array arr modificado. 
+////                                 Por ejemplo, escalaArray([1,2,3], 3] debería devolver [3,6,9].
 
+function escalaArray(array,mult) {
+    for (let i = 0; i < array.length; i++) {
+        array[i] = array[i] * mult    
+    }
+    return array
 
+}
 
-Perspectiva: Negativa - Dado un array crear y devuelve uno nuevo que contenga todos los valores del array original, pero negativos (no simplemente multiplicando por -1). Dado [1,-3,5], devuelve [-1,-3,-5].
-Siempre hambriento - Crea una función que acepte un array e imprima (print) “yummy” cada vez que alguno de los valores sea “comida”. Si ningún valor es “comida”, entonces imprime “tengo hambre” una vez. 
-Cambiar hacia el centro -  Dado un array, cambia el primer y último valor, el tercero con el ante penútimo, etc. Ejemplo: cambiaHaciaElCentro([true, 42, “Ada”, 2, “pizza”]) cambia el array a [“pizza¨, 42, “Ada”, 2, true]. cambiaHaciaElCentro([1,2,3,4,5,6]) cambia el array a [6,2,4,3,5,1]. No es necesario devolver (return) el array esta vez. 
-Escala el Array - Dado un array arr y un número num, multiplica todos los valores en el array arr por el número num, y devuelve el array arr modificado. Por ejemplo, escalaArray([1,2,3], 3] debería devolver [3,6,9].
+array = [1,2,3]
+mult = 3
+console.log(escalaArray(array, mult))
+////
+////
